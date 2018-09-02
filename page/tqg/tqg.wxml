@@ -1,0 +1,57 @@
+<view class="page">
+  <view class="">
+    <!-- 时段导航 -->
+    <scroll-view class="scroll-head nav" scroll-with-animation="true" scroll-into-view="{{toView}}" scroll-x>
+      <view id="h_{{item.val}}" class="{{toView == 'h_'+item.val ? 'active' : ''}} item" wx:for="{{timeList}}" wx:key="" bindtap="changeNav" data-val="{{item.val}}" data-id="{{item.time}}">
+        <view>
+          <view class="time">{{item.time}}</view>
+          <view class="tips" wx:if="{{item.val < nowHour}}">
+            已抢购
+          </view>
+          <view class="tips" wx:elif="{{item.val == nowHour}}">
+            抢购进行中
+          </view>
+          <view class="tips" wx:else="{{item.val > nowHour}}">
+            即将开场
+          </view>
+        </view>
+      </view>
+
+    </scroll-view>
+
+
+
+    <!-- 商品列表 -->
+    <scroll-view class="goodsList" scroll-y="true" scroll-top="{{scrollTop}}" style="height:{{scrollHeight}}px;" bindscrolltolower="lower">
+
+    <block wx:for="{{goodsList}}" wx:key="">
+      
+      <view class="gooditem" bindtap="showDetail" data-id="{{item.numIid}}">
+        <view class="goodimg">
+          <image src="{{item.picUrl}}"></image>
+        </view>
+        <view class="goodinfo">
+          <view>
+            <view class="title">{{item.title}}</view>
+            <view class="category">商品类型:{{item.categoryName}}</view>
+            <view class="priceinfo">
+              <view>原价:
+                <text class="reservePrice"> {{item.reservePrice}}</text>
+              </view>
+              <view>活动价:
+                <text class="zkFinalPrice"> {{item.zkFinalPrice}}</text>
+              </view>
+              <view>售出: {{item.soldNum}} 件</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+
+
+
+      <view class="loading" hidden="{{!searchLoading}}">正在载入...</view>
+      <view class="loading" hidden="{{!loadComplete}}">我是有底线的~</view>
+    </scroll-view>
+  </view>
+</view>

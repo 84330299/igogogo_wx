@@ -1,0 +1,110 @@
+.hotrecommend {
+  width: 730rpx;
+  height: auto;
+  background-color: #fff;
+  margin-top: 10rpx;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+}
+
+.hotrecommend .category-title {
+  padding:10px 15px;
+  color: #434343;
+  font-size: 30rpx;
+  /* height: 80rpx;
+  line-height: 80rpx; */
+  text-align: center;
+}
+
+.hotrecommend .hot_top {
+  position: relative;
+  width: 730rpx;
+  height: 350rpx;
+}
+
+.hotrecommend .hot_top .image {
+  width: 730rpx;
+  height: 350rpx;
+}
+
+.hotrecommend .hot_top .image image {
+  width: 730rpx;
+  height: 350rpx;
+}
+
+.hotrecommend .hot_top .info {
+  position: absolute;
+  text-align: center;
+  width: 730rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  bottom: 0;
+  color: #fff;
+  background: rgba(130, 130, 130, 0.5);
+  overflow: hidden;
+  font-size: 28rpx;
+}
+
+.hotrecommend .hot_bottom {
+  margin-top: 10rpx;
+  display: flex;
+}
+
+.hotrecommend .hot_bottom .hot_bottom_l {
+  width: 360rpx;
+  height: 360rpx;
+  position: relative;
+}
+
+.hotrecommend .hot_bottom .hot_bottom_l .image {
+  width: 360rpx;
+  height: 360rpx;
+}
+
+.hotrecommend .hot_bottom .hot_bottom_l .image  image {
+  width: 360rpx;
+  height: 360rpx;
+}
+
+.hotrecommend .hot_bottom .hot_bottom_l .info {
+  position: absolute;
+  text-align: center;
+  width: 360rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  bottom: 0;
+  color: #fff;
+  background: rgba(130, 130, 130, 0.5);
+  overflow: hidden;
+  font-size: 28rpx;
+}
+
+.hotrecommend .hot_bottom .hot_bottom_r {
+  margin-left: 10rpx;
+  width: 360rpx;
+  height: 360rpx;
+  position: relative;
+}
+
+.hotrecommend .hot_bottom .hot_bottom_r .image {
+  width: 360rpx;
+  height: 360rpx;
+}
+
+.hotrecommend .hot_bottom .hot_bottom_r .image  image {
+  width: 360rpx;
+  height: 360rpx;
+}
+
+.hotrecommend .hot_bottom .hot_bottom_r .info {
+  position: absolute;
+  text-align: center;
+  width: 360rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  bottom: 0;
+  color: #fff;
+  background: rgba(130, 130, 130, 0.5);
+  overflow: hidden;
+  font-size: 28rpx;
+}

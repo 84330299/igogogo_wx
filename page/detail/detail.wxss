@@ -1,0 +1,343 @@
+/* page/details/details.wxss */
+
+.myCanvas {
+  width: 750rpx;
+  height: 1080rpx;
+}
+
+.goodsimgs {
+  width: 750rpx;
+  height: 750rpx;
+}
+
+.goodsimgs image {
+  width: 750rpx;
+  height: 750rpx;
+}
+
+.goods-base {
+  width: 750rpx;
+  /* height: 306rpx; */
+  overflow: hidden;
+  background: #fff;
+  border-top: 1px solid #f4f4f4;
+  border-bottom: 1px solid #f4f4f4;
+}
+
+.goods-base .c {
+  display: block;
+  height: 100%;
+  margin-left: 31.25rpx;
+}
+
+.goods-base .name {
+  height: 70rpx;
+  font-size: 31rpx;
+  line-height: 31rpx;
+  padding: 38rpx 31.25rpx 0 0;
+}
+
+.goods-base .coupon {
+  display: block;
+  width: 730rpx;
+  /* height: 180rpx; */
+  margin-left: 10rpx;
+  margin-bottom: 10rpx;
+}
+
+.goods-base .coupon .coupon-info {
+  color: #fff;
+  background: linear-gradient(to right, #f79ea2, #f95b61);
+  border-radius: 10rpx;
+  display: flex;
+  font-size: 30rpx;
+}
+
+.goods-base .coupon .coupon-info .coupon-desc {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+  text-align: center;
+  border-right: 2px dotted #fff;
+  font-size: 25rpx;
+}
+
+.goods-base .coupon .coupon-info .coupon-desc .cc {
+  font-size: 40rpx;
+  padding-bottom: 10rpx;
+}
+
+.goods-base .coupon .coupon-info .coupon-price {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  border-right: 2px dotted #fff;
+  text-align: center;
+}
+
+.goods-base .coupon .coupon-info .coupon-price .t {
+  /* display: block; */
+  flex: 1;
+  line-height: 80rpx;
+  font-size: 35rpx;
+}
+
+.goods-base .coupon .coupon-info .coupon-price .cc {
+  /* display: block; */
+  flex: 1;
+  line-height: 80rpx;
+  font-size: 55rpx;
+}
+
+/* 相关商品推荐 */
+
+/* .hotsale {
+  margin-top: 10rpx;
+  text-align: center;
+  width: 750rpx;
+  height: auto;
+  overflow: hidden;
+  background: #fff;
+  border-bottom: 1px solid #f4f4f4;
+  border-top: 1px solid #f4f4f4;
+}
+
+.hotsale .weui-cell_access {
+  font-size: 30rpx;
+  text-align: left;
+  border-bottom: 1px solid #f4f4f4;
+}
+
+.hotsale .hotsale-list {
+  display: flex;
+  margin-left: 10rpx;
+}
+
+.hotsale .item {
+  text-align: center;
+  width: 200rpx;
+  height: 300rpx;
+  font-size: 25rpx;
+  margin-right: 10rpx;
+}
+
+.hotsale .item .image {
+  position: relative;
+  height: 200rpx;
+  width: 200rpx;
+}
+
+.hotsale .item .image image {
+  height: 200rpx;
+  width: 200rpx;
+}
+
+.hotsale .item .volume {
+  position: absolute;
+  width: 200rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  color: #fff;
+  bottom: 0;
+  background: rgba(130, 130, 130, 0.5);
+}
+
+.hotsale .item .title {
+  display: block;
+  width: 200rpx;
+  height: 50rpx;
+  line-height: 70rpx;
+  text-align: center;
+  overflow: hidden;
+  color: #333;
+}
+
+.hotsale .item .price {
+  color: #b4282d;
+  height: 50rpx;
+  line-height: 50rpx;
+} */
+
+/* 相关商品推荐 */
+
+.goods-base .desc {
+  height: 43rpx;
+  margin-bottom: 41rpx;
+  font-size: 24rpx;
+  line-height: 36rpx;
+  color: #999;
+}
+
+.goods-base .price {
+  text-align: left;
+  height: 60rpx;
+  font-size: 30rpx;
+  line-height: 60rpx;
+  color: #b4282d;
+  display: flex;
+}
+
+.goods-base .price .l {
+  flex: 1;
+}
+
+.reserve {
+  color: #999;
+  text-decoration: line-through;
+}
+
+.goods-rate {
+  margin-top: 10rpx;
+  text-align: center;
+  width: 750rpx;
+  height: auto;
+  overflow: hidden;
+  background: #fff;
+  border-bottom: 1px solid #f4f4f4;
+  border-top: 1px solid #f4f4f4;
+}
+
+.goods-rate .weui-cell_access {
+  font-size: 30rpx;
+  text-align: left;
+  border-bottom: 1px solid #f4f4f4;
+}
+
+.goods-rate .rate {
+  font-size: 25rpx;
+  text-align: left;
+  margin-top: 30rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+
+.goods-rate .rate .pics {
+  margin-top: 20rpx;
+}
+
+.goods-rate .rate .pics image {
+  width: 80rpx;
+  height: 80rpx;
+  margin-right: 10rpx;
+}
+
+.goods-rate .rate .allRate {
+  text-align: center;
+  height: 50rpx;
+  line-height: 50rpx;
+  margin-top: 20rpx;
+  margin-bottom: 50rpx;
+  border: 1px solid #999;
+  border-radius: 3px;
+  color: #999;
+}
+
+.goods-rate .rate .userInfoAndTime {
+  display: flex;
+}
+
+.goods-rate .rate .displayUserNick {
+  flex: 1;
+}
+
+.goods-rate .rate .displayUserNick image {
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 100%;
+  vertical-align: middle;
+  margin-right: 10rpx;
+}
+
+.goods-rate .rate .time {
+  color: #999;
+}
+
+.goods-rate .rate .auctionSku {
+  color: #999;
+}
+
+.goods-info {
+  margin-top: 10rpx;
+  border-top: 1px solid #f4f4f4;
+  border-bottom: 1px solid #f4f4f4;
+  background-color: #fff;
+  text-align: center;
+}
+
+.goods-rate .norate {
+  text-align: center;
+  font-size: 30rpx;
+  font-weight: 400;
+}
+
+.bottom-btn {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  width: 750rpx;
+  height: 100rpx;
+  display: inline-flex;
+  background: #fff;
+}
+
+.bottom-btn .home {
+  height: 100rpx;
+  width: 50rpx;
+  border-top: 1px solid #f4f4f4;
+  border-right: 1px solid #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.home image {
+  height: 100rpx;
+  width: 100rpx;
+}
+
+.bottom-btn .coupon {
+  height: 100rpx;
+  flex: 3;
+  text-align: center;
+}
+
+.bottom-btn .coupon .coupon-money {
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 35rpx;
+  color: #f95b61;
+}
+
+.bottom-btn .coupon .no-coupon-money {
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 40rpx;
+  color: #f95b61;
+}
+
+.bottom-btn .coupon .coupon-time {
+  font-size: 25rpx;
+  color: #999;
+  height: 40rpx;
+  line-height: 40rpx;
+}
+
+.bottom-btn .buy {
+  height: 100rpx;
+  /* line-height: 96rpx; */
+  flex: 2;
+  text-align: center;
+  background: #f95b61;
+  color: #fff;
+  /* border: 1px solid #f95b61; */
+}
+
+.bottom-btn .buy button {
+  border: 0px;
+  background: #f95b61;
+  color: #fff;
+  line-height: 100rpx;
+  /* border-top: 1px solid #f4f4f4; */
+}

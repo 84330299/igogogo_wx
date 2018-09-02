@@ -1,0 +1,22 @@
+<view class="banner-container">
+  <!-- 搜索框 -->
+  <view class="weui-search-bar">
+    <view class="weui-search-bar__form">
+      <view class="weui-search-bar__box">
+        <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+        <input type="text" bindtap="showSearch" class="weui-search-bar__input" placeholder="请输入关键词" />
+      </view>
+    </view>
+  </view>
+
+  <!-- banner -->
+  <swiper class="banner" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{banners}}" wx:key="">
+      <swiper-item>
+        <navigator url="/page/detail/detail?numIid={{item.bannerclickurl}}">
+          <image mode="aspectFill" class="slide-image" src="{{item.bannerimg}}" />
+        </navigator>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>

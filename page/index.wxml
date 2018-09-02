@@ -1,0 +1,14 @@
+<view class="page">
+  <view class="page__bd">
+    <!-- banner -->
+    <banner/>
+    <!-- navbar -->
+    <navbar/>
+    <!-- 人气推荐 -->
+    <hotrecommend/>
+    <!-- 热销推荐 -->
+    <hotsale/>
+    <!-- 人气排行 -->
+    <ranklist/>
+  </view>
+</view>

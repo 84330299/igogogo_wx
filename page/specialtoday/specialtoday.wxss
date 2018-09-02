@@ -1,0 +1,129 @@
+/* page/category/category.wxss */
+
+/* 分类导航 */
+
+.nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  font-size: 13px;
+  background-color: white;
+  border-bottom: 1px solid ghostwhite;
+}
+
+.scroll-head {
+  display: flex;
+  white-space: nowrap;
+}
+
+.scroll-head view {
+  height: 80rpx;
+  line-height: 80rpx;
+  width: 150rpx;
+  text-align: center;
+  display: inline-block;
+}
+
+.active {
+  border-bottom: 2px solid #b4282d;
+}
+
+/* 商品列表 */
+
+.cate-item {
+  height: auto;
+  overflow: hidden;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+}
+
+.cate-item .h {
+  height: 145rpx;
+  width: 730rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cate-item .h .name {
+  display: block;
+  height: 35rpx;
+  margin-bottom: 18rpx;
+  font-size: 30rpx;
+  color: #333;
+}
+
+.cate-item .h .desc {
+  display: block;
+  height: 24rpx;
+  font-size: 24rpx;
+  color: #999;
+}
+
+.cate-item .b {
+  width: 730rpx;
+  margin-top: 100rpx;
+  /* padding: 0 6.25rpx; */
+  height: auto;
+  overflow: hidden;
+}
+
+/* 网格样式 */
+
+.cate-item .b .item {
+  float: left;
+  background: #fff;
+  width: 365rpx;
+  margin-bottom: 15rpx;
+  padding-bottom: 33.333rpx;
+  height: auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+.cate-item .b .item-b {
+  margin-left: 6.25rpx;
+}
+
+.cate-item .item .img {
+  width: 355.625rpx;
+  height: 355.625rpx;
+}
+
+.cate-item .item .name {
+  display: block;
+  width: 355.625rpx;
+  height: 85rpx;
+  margin: 11.5rpx 0 22rpx 0;
+  text-align: center;
+  overflow: hidden;
+  /* padding: 0 20rpx; */
+  font-size: 28rpx;
+  color: #333;
+}
+
+.cate-item .item .price {
+  /* display: block; */
+  display: flex;
+  width: 360rpx;
+  height: 30rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #b4282d;
+}
+
+.cate-item .item .price .l {
+  text-align: left;
+  /* padding-left: 10rpx; */
+  flex: 1;
+}
+
+.cate-item .item .price .r {
+  flex: 1;
+  color: #999;
+  text-align: right;
+  font-size: 25rpx;
+  /* padding-right: 10rpx; */
+}

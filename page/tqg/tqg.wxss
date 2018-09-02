@@ -1,0 +1,106 @@
+.nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  font-size: 13px;
+  background-color: white;
+  border-bottom: 1px solid ghostwhite;
+}
+
+.scroll-head {
+  display: flex;
+  white-space: nowrap;
+}
+
+.scroll-head .item {
+  height: 100rpx;
+  /* line-height: 180rpx; */
+  width: 180rpx;
+  text-align: center;
+  display: inline-block;
+}
+
+.scroll-head .item .time {
+  font-size: 35rpx;
+}
+
+.scroll-head .item .tips {
+  font-size: 25rpx;
+}
+
+.active {
+  border-bottom: 2px solid #b4282d;
+  background-color: #b4282d;
+  color: #fff;
+  border-radius: 3%;
+}
+
+.goodsList {
+  margin-top: 110rpx;
+}
+
+.gooditem {
+  width: 730rpx;
+  display: flex;
+  background-color: #fff;
+  margin-bottom: 10rpx;
+  margin-top: 10rpx;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+  border-bottom: 1px solid ghostwhite;
+}
+
+.goodimg {
+  width: 200rpx;
+  height: 200rpx;
+  background: gray;
+}
+
+.goodimg image {
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.goodinfo {
+  font-size: 25rpx;
+  width: 550rpx;
+  height: 200rpx;
+  padding-left: 20rpx;
+}
+
+.goodinfo .title {
+  font-size: 30rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  /* margin-bottom: 10rpx; */
+}
+
+.goodinfo .category {
+  font-size: 25rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  color: #999;
+  /* margin-bottom: 20rpx; */
+}
+
+.goodinfo .priceinfo {
+  height: 70rpx;
+  line-height: 70rpx;
+  width: 550rpx;
+  display: inline-flex;
+  text-align: left;
+}
+
+.goodinfo .priceinfo view {
+  flex: 1;
+}
+
+.zkFinalPrice {
+  color: #b4282d;
+}
+
+.reservePrice {
+  color: #999;
+  text-decoration: line-through;
+}

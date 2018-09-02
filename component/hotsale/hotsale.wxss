@@ -1,0 +1,68 @@
+@import '/style/weui.wxss';
+
+.hotsale {
+  width: 730rpx;
+  height: 384rpx;
+  background-color: #fff;
+  margin-top: 10rpx;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+}
+
+.hotsale .weui-cell_access {
+  padding: 0 20rpx 0 20rpx;
+  color: #434343;
+  font-size: 30rpx;
+   height: 80rpx;
+  line-height: 80rpx; 
+}
+
+.hotsale .hotsale-list {
+  display: flex;
+}
+
+.hotsale .item {
+  text-align: center;
+  width: 200rpx;
+  height: 300rpx;
+  border: 1px solid #f4f4f4;
+  font-size: 25rpx;
+  margin-right: 10rpx;
+}
+
+.hotsale .item .image {
+  position: relative;
+  height: 200rpx;
+  width: 200rpx;
+}
+
+.hotsale .item .image image {
+  height: 200rpx;
+  width: 200rpx;
+}
+
+.hotsale .item .volume {
+  position: absolute;
+  width: 200rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  color: #fff;
+  bottom: 0;
+  background: rgba(130, 130, 130, 0.5);
+}
+
+.hotsale .item .title {
+  display: block;
+  width: 200rpx;
+  height: 50rpx;
+  line-height: 70rpx;
+  text-align: center;
+  overflow: hidden;
+  color: #333;
+}
+
+.hotsale .item .price {
+  color: #b4282d;
+  height: 50rpx;
+  line-height: 50rpx;
+}

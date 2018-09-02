@@ -1,0 +1,31 @@
+<view class="hotrecommend">
+  <view class="category-title">人气推荐</view>
+  <view class="hot_top" bindtap="showDetail" data-id="{{hotrecommendlist[0].recommendclickurl}}">
+    <view class="image">
+      <image mode="aspectFill" src="{{hotrecommendlist[0].recommendimg}}"></image>
+    </view>
+    <view class="info">
+      <view class="title">{{hotrecommendlist[0].recommendtitle}}</view>
+    </view>
+  </view>
+
+  <view class="hot_bottom">
+    <view class="hot_bottom_l" bindtap="showDetail" data-id="{{hotrecommendlist[1].recommendclickurl}}">
+      <view class="image">
+        <image mode="aspectFill" src="{{hotrecommendlist[1].recommendimg}}"></image>
+      </view>
+      <view class="info">
+        <view class="title">{{hotrecommendlist[1].recommendtitle}}</view>
+      </view>
+    </view>
+    <view class="hot_bottom_r" bindtap="showDetail" data-id="{{hotrecommendlist[2].recommendclickurl}}">
+      <view class="image">
+        <image mode="aspectFill" src="{{hotrecommendlist[2].recommendimg}}"></image>
+      </view>
+      <view class="info">
+        <view class="title">{{hotrecommendlist[2].recommendtitle}}</view>
+      </view>
+    </view>
+  </view>
+
+</view>

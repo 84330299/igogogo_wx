@@ -1,0 +1,33 @@
+<view class="page">
+  <view class="">
+    <!-- 分类导航 -->
+    <scroll-view class="scroll-head nav" scroll-with-animation="true" scroll-into-view="{{toView}}" scroll-x>
+      <view wx:for="{{navItems}}" wx:key="categoryid" id="cate_{{item.categoryid}}" class="{{toView == 'cate_'+item.categoryid  ? 'active' : ''}}" bindtap="changeNav" data-keyword="{{item.keyword}}" data-val="{{item.categoryname}}" data-id="{{item.categoryid}}">{{item.categoryname}}</view>
+    </scroll-view>
+    <!-- 商品列表 -->
+    <scroll-view scroll-y="true" scroll-top="{{scrollTop}}" style="height:{{scrollHeight}}px;" bindscrolltolower="lower">
+      <view class="cate-item">
+        <!-- <view class="h">
+          <text class="name">好卷清单</text>
+          <text class="desc" bindtap='tap'>ig_itemcoupon</text>
+        </view> -->
+        <view class="b">
+          <view class="item {{(iindex + 1) % 2 == 0 ? 'item-b' : ''}}" bindtap="showDetail" data-id="{{item.numIid}}" wx:for="{{goodsList}}" wx:key="id">
+            <image class="img" src="{{item.pictUrl}}" background-size="cover"></image>
+            <text class="name">{{item.title}}</text>
+            <view class="price">
+              <view class="l">
+                ￥{{item.zkFinalPrice}}
+              </view>
+              <view class="r">
+                月销{{item.volume}}笔
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="loading" hidden="{{!searchLoading}}">正在载入...</view>
+      <view class="loading" hidden="{{!loadComplete}}">我是有底线的~</view>
+    </scroll-view>
+  </view>
+</view>

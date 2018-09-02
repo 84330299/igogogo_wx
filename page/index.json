@@ -1,0 +1,9 @@
+{
+  "usingComponents":{
+    "banner":"/component/banner/banner",
+    "hotsale": "/component/hotsale/hotsale",
+    "ranklist": "/component/ranklist/ranklist",
+    "hotrecommend": "/component/hotrecommend/hotrecommend",
+    "navbar": "/component/navbar/navbar"
+  }
+}

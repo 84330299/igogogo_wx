@@ -1,0 +1,38 @@
+.navbarlist {
+  margin:10rpx 10rpx 10rpx 10rpx;
+  background-color: #fff;
+  width: 730rpx;
+  height: 300rpx;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  font-size: 20rpx;
+  color: #434343;
+}
+
+.navbarlist .item {
+  display: block;
+  width: 146rpx;
+  height: 150rpx;
+}
+
+.navbarlist .item .image {
+  width: 146rpx;
+  height: 80rpx;
+}
+
+.navbarlist .item .image image {
+  width: 70rpx;
+  height: 70rpx;
+  vertical-align: middle;
+  margin-top: 30rpx;
+  border-radius: 50%;
+  border: 1px solid #999;
+}
+
+.navbarlist .item .title {
+  width: 146rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  margin-top: 10rpx;
+}

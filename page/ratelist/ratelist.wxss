@@ -1,0 +1,62 @@
+/* page/ratelist/ratelist.wxss */
+
+.rate-list {
+  text-align: center;
+  width: 750rpx;
+  height: auto;
+  overflow: hidden;
+  background: #fff;
+  border-top: 1px solid #f4f4f4;
+}
+
+.rate {
+  font-size: 25rpx;
+  text-align: left;
+  padding: 30rpx 30rpx;
+  border-bottom: 1px solid #f4f4f4;
+}
+
+.rate .pics {
+  margin-top: 20rpx;
+}
+
+.rate .pics image {
+  width: 80rpx;
+  height: 80rpx;
+  margin-right: 10rpx;
+}
+
+.rate .allRate {
+  margin-bottom: 50rpx;
+}
+
+.rate .userInfoAndTime {
+  display: flex;
+}
+
+.rate .displayUserNick {
+  flex: 1;
+}
+
+.rate .time {
+  color: #999;
+}
+
+.rate .displayUserNick image {
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 100%;
+  vertical-align: middle;
+  margin-right: 10rpx;
+}
+
+.rate .auctionSku {
+  color: #999;
+}
+
+.norate {
+  text-align: center;
+  font-size: 30rpx;
+  padding-top: 100rpx;
+  padding-bottom: 100rpx;
+}

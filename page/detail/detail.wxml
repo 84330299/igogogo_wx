@@ -1,0 +1,119 @@
+<view class="page">
+  <view class="page__bd">
+    <!-- 商品组图 -->
+    <swiper class="goodsimgs" indicator-dots="true" autoplay="true" interval="3000" duration="1000">
+      <block wx:if="{{goods.itemBase.smallImages !=null && goods.itemBase.smallImages.length >0}}">
+        <swiper-item wx:for="{{goods.itemBase.smallImages}}" wx:key="">
+          <image mode="aspectFill" src="{{item}}" background-size="cover"></image>
+        </swiper-item>
+      </block>
+      <block wx:else>
+        <swiper-item>
+          <image src="{{goods.itemBase.pictUrl}}" background-size="cover"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+
+
+    <!-- 商品基本信息 -->
+    <view class="goods-base">
+      <view class="c">
+        <view class="name">{{goods.itemBase.title}}</view>
+        <view class="price">
+          <view class="l">现价:￥{{goods.itemBase.zkFinalPrice}}</view>
+          <view class="l reserve">原价: ￥{{goods.itemBase.reservePrice}}
+          </view>
+          <view class="l volume">
+            <block wx:if="{{goods.itemBase.volume == null}}">
+              30天销量:0
+            </block>
+            <block wx:else>
+              30天销量:{{goods.itemBase.volume}}
+            </block>
+          </view>
+        </view>
+      </view>
+      <!-- 优惠券信息 -->
+      <block wx:if="{{goods.couponInfo != null}}">
+        <view class="coupon">
+          <view class="coupon-info">
+            <view class="coupon-desc">
+              <view class="cc">优惠券:￥{{goods.couponInfo.couponAmount}}</view>
+              <view class="d">使用期限</view>
+              <view class="dinfo">{{goods.couponInfo.couponStartTime}} 至 {{goods.couponInfo.couponEndTime}}</view>
+            </view>
+            <view class="coupon-price">
+              <view class="t">用券后</view>
+              <view class="cc">￥{{couponAfterPrice}}</view>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+
+    <!-- 相关推荐 -->
+    <!-- <view class="hotsale">
+      <view class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">相关推荐</view>
+      </view>
+      <scroll-view scroll-with-animation="true" scroll-x>
+        <view class="hotsale-list">
+          <view class="item" bindtap="showDetail" wx:for="{{relatedGoods}}" wx:key="" data-numIid="{{item.numIid}}">
+            <view class="image">
+              <image src="{{item.pictUrl}}"></image>
+              <view class="volume">月销:{{item.volume}}件</view>
+            </view>
+            <view class="title">{{item.title}}</view>
+            <view class="price">活动价:{{item.zkFinalPrice}}</view>
+          </view>
+        </view>
+      </scroll-view>
+    </view> -->
+
+    <!-- 商品详情与评价 -->
+    <block wx:if="{{rateInfo != null}}">
+      <view class="goods-rate">
+        <view class="weui-cell weui-cell_access" hover-class="weui-cell_active" bindtap="showAllRate" data-itemid="{{goods.itemBase.numIid}}" data-sellerid="{{goods.itemBase.sellerId}}">
+          <view class="weui-cell__bd">用户评价 ({{rateCount}})</view>
+          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </view>
+        <!-- 宝贝评价 -->
+        <view class="rate">
+          <view class="userInfoAndTime">
+            <view class="displayUserNick">
+              <image src="https://gtms03.alicdn.com/tps/i3/TB1yeWeIFXXXXX5XFXXuAZJYXXX-210-210.png_80x80.jpg"></image>
+              {{rateInfo.displayUserNick}}
+            </view>
+            <view class="time">{{rateInfo.rateDate}}</view>
+          </view>
+          <view class="rateContent">{{rateInfo.rateContent}}</view>
+          <view class="auctionSku">{{rateInfo.auctionSku}}</view>
+          <view class="pics">
+            <image wx:for="{{rateInfo.pics}}" wx:key="" src="{{item}}" data-src="{{item}}" mode="widthFix"></image>
+          </view>
+        </view>
+      </view>
+    </block>
+
+    <!-- 图文详情 -->
+    <view class="goods-info">
+      <image wx:for="{{goods.itemDesc.data.images}}" wx:key="" src="{{item}}" data-src="{{item}}" mode="widthFix"></image>
+    </view>
+
+    <!-- 底部菜单 -->
+    <!-- <view class="bottom-btn">
+      <view class="home">
+        <image bindtap='gohome' src="/page/images/home_go.png"></image>
+      </view> -->
+      <!-- <view class="coupon">
+        <view class="no-coupon-money">生成图片</view>
+      </view> -->
+      <!-- <view class="buy" bindtap="getCoupon">立刻领卷</view> -->
+      <!-- <view class="buy">
+        <button plain="true" open-type="contact">咨询客服</button>
+      </view>
+    </view> -->
+
+    
+  </view>
+</view>

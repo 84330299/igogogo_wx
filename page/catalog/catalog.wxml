@@ -1,0 +1,28 @@
+<view class="page">
+  <block wx:if="{{cateItems != null}}">
+    <view class="catalog">
+      <view class="l">
+        <scroll-view style="height:{{navHeight}}px" scroll-y="true">
+          <block wx:for="{{cateItems}}" wx:key="categoryid">
+            <view class='nav_left_items {{curNav == item.categoryid ? "active" : ""}}' bindtap="switchRightTab" data-index="{{index}}" data-id="{{item.categoryid}}">{{item.categoryname}}</view>
+          </block>
+        </scroll-view>
+      </view>
+      <view class="r">
+        <scroll-view style="height:100%" scroll-y="true">
+          <!--如果有数据，才遍历项-->
+          <view wx:if="{{cateItems[curIndex].childrens.length > 0}}">
+            <block wx:for="{{cateItems[curIndex].childrens}}" wx:key="">
+              <view class="nav_right_items">
+                <image bindtap="goCategory" data-selfid="{{item.categoryid}}" data-parentid="{{item.parentid}}" data-keyword="{{item.keyword}}" data-val="{{item.categoryname}}" src="{{item.categoryimg == null ? 'http://yanxuan.nosdn.127.net/8945ae63d940cc42406c3f67019c5cb6.png' : item.categoryimg }}"></image>
+                <text>{{item.categoryname}}</text>
+              </view>
+            </block>
+          </view>
+          <!--如果无数据，则显示数据-->
+          <view class="nodata_text" wx:else>该分类暂无数据</view>
+        </scroll-view>
+      </view>
+    </view>
+  </block>
+</view>

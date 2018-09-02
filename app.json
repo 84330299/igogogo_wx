@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "page/index",
+    "page/tqg/tqg",
+    "page/detail/detail",
+    "page/ratelist/ratelist",
+    "page/catalog/catalog",
+    "page/category/category",
+    "page/searchbar/searchbar",
+    "page/hotsalelist/hotsalelist",
+    "page/specialtoday/specialtoday",
+    "component/banner/banner",
+    "component/hotsale/hotsale",
+    "component/ranklist/ranklist",
+    "component/hotrecommend/hotrecommend",
+    "component/navbar/navbar"
+  ],
+  "window": {
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#f95b61",
+    "navigationBarTitleText": "大家一起来",
+    "navigationBarTextStyle": "white"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "tabBar": {
+    "backgroundColor": "#fafafa",
+    "borderStyle": "white",
+    "selectedColor": "#f95b61",
+    "color": "#666",
+    "list": [
+      {
+        "pagePath": "page/index",
+        "text": "首页",
+        "iconPath": "page/images/home.png",
+        "selectedIconPath": "page/images/home.png"
+      },
+      {
+        "pagePath": "page/catalog/catalog",
+        "text": "分类",
+        "iconPath": "page/images/project.png",
+        "selectedIconPath": "page/images/project.png"
+      },
+      {
+        "pagePath": "page/specialtoday/specialtoday",
+        "text": "今日特价",
+        "iconPath": "page/images/rank.png",
+        "selectedIconPath": "page/images/rank.png"
+      }
+    ]
+  },
+  "debug": true
+}

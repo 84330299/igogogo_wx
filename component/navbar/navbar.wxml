@@ -1,0 +1,9 @@
+<view class="navbarlist">
+   <view class="item" wx:for="{{navbarlist}}" bindtap="showCategory" data-cid="{{item.categoryid}}" data-keyword="{{item.childrens[0].keyword}}" data-selfid="{{item.childrens[0].categoryid}}" wx:key="">
+    <view class="image">
+       <image src="{{item.categoryimg}}"></image> 
+    </view>
+    <view class="title">{{item.categoryname}}</view>
+  </view> 
+
+</view>

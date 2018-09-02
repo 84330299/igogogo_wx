@@ -1,0 +1,19 @@
+<view class="hotsale">
+ <view class="weui-cell weui-cell_access" hover-class="weui-cell_active" bindtap="showHotSaleList">
+    <view class="weui-cell__bd">热销推荐</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access">更多</view>
+  </view>
+  <!-- <view class="category-title">热销推荐</view> -->
+  <scroll-view scroll-with-animation="true" scroll-x>
+    <view class="hotsale-list">
+      <view class="item" bindtap="showDetail" wx:for="{{hostsale}}" wx:key="" data-numIid="{{item.numIid}}">
+        <view class="image">
+          <image src="{{item.pictUrl}}"></image>
+          <view class="volume">月销:{{item.volume}}件</view>
+        </view>
+        <view class="title">{{item.title}}</view>
+        <view class="price">活动价:{{item.zkFinalPrice}}</view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
